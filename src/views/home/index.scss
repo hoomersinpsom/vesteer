@@ -1,0 +1,25 @@
+.HomeView {
+  position: relative;
+  z-index: 0;
+  .Videos__Wrap{
+    display: flex;
+    flex-wrap: wrap;
+    .VideoCard{
+      width: 33.3333%;
+      position: relative;
+      border: 5px solid $bgcolor;
+      padding-bottom: 54px;
+      @include small-device{
+        width: 100%;
+      }
+      .StarRating{
+        position: absolute;
+        bottom: 14px;
+        left: 20px;
+      }
+    }
+  }
+  .menu{
+    padding-right: 10px;
+  }
+}
