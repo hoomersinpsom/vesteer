@@ -10,6 +10,12 @@
 		color: #000;
 		text-align: center;
 		margin-bottom: 60px;
+		@include small-device{
+			margin-bottom: 40px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
 		img{
 			display: inline-block;
 		}

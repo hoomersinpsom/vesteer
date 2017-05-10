@@ -3,6 +3,9 @@
 	position: relative;
 	overflow: hidden;
 	&__item{
+		@include small-device{
+			padding-bottom: 30px;
+		}
 		&__slider{
 			position: absolute !important;
 			top: 0;
@@ -54,10 +57,17 @@
 				font-weight: bold;
 				font-size: 46px;
 				margin-bottom: 46px;
+				@include small-device{
+					font-size: 30px;
+					margin-bottom: 40px;
+				}
 			}
 			p{
 				font-size: 18px;
 				margin-bottom: 86px;
+				@include small-device{
+					margin-bottom: 40px;
+				}
 			}
 		}
 	}

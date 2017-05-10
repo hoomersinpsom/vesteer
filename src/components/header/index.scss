@@ -4,11 +4,19 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
+	@include small-device{
+		background-color: rgba(0, 0, 0, 0.82);
+		position: fixed;
+	}
 	&__logo{
 		color: #fff;
 		padding-top: 30px;
 		padding-bottom: 30px;
 		display: inline-block;
+		@include small-device{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
 		.h1{
 			font-weight: bold;
 			font-size: 20px;
@@ -28,10 +36,54 @@
 			margin-left: 5px;
 			margin-right: 5px;
 		}
+
+		@include small-device{
+			position: absolute;
+			top: 100%;
+			width: 100%;
+			left: 100%;
+			background-color: rgba(0, 0, 0, 0.82);
+			padding-top: 10px;
+			padding-bottom: 10px;
+			@include transition(all 400ms);
+			a{
+				display: block;
+				text-align: center;
+				padding-top: 3px;
+				padding-bottom: 3px;
+			}
+
+			&.active{
+				left: 0;
+			}
+		}
 	}
 	.sep{
 		background-color: $blue-light;
 		height: 1px;
 		opacity: 0.5;
+		@include small-device{
+			margin-left: -15px;
+			margin-right: -15px;
+		}
 	}
+	.btn-mob{
+		position: absolute;
+		right: 20px;
+		top: 50%;
+		@include translateY(-50%);
+		@include transition(all 300ms);
+
+	}
+	@include small-device{
+		.vcenter{
+			display: block;
+		}
+	}
+}
+.hamburguer{
+  @include burger(30px, 4px, 5px,$blue-light);
+  &.active{
+    @include burger-to-cross()
+  }
 }

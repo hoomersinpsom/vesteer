@@ -7,7 +7,7 @@
 			width: 50%;
 		}
 		img{
-			width: 100%;			
+			width: 100%;
 			transition: all 600ms;
 		}
 		._hov{
@@ -30,7 +30,7 @@
 				transition: all 600ms;
 				opacity: 0;
 				display: block;
-				filter: blur(3px);
+				//filter: blur(3px);
 			}
 			strong{
 				transform: translateX(-40px);
@@ -42,7 +42,7 @@
 
 			&:hover{
 				img{
-				//	filter: blur(3px);					
+				//	filter: blur(3px);
 				}
 				._hov{
 
