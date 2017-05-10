@@ -1,0 +1,13 @@
+.btn{
+	background-color: $red;
+	border-radius: 2px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 11px;
+	padding: 13px 40px;
+	@include transition(all 300ms);
+	&:hover{
+		background-color: $red-dark;
+		color: #fff;
+	}
+}

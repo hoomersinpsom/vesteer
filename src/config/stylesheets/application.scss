@@ -1,6 +1,16 @@
 // Compass
 @import '~compass-mixins/lib/compass';
+@import '~compass-mixins/lib/animate';
+@import 'buttons';
 
 body{
   background-color: $bgcolor;
+}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+#yield{
+	overflow: hidden;
 }

@@ -1,0 +1,25 @@
+.types{
+	padding-top: 80px;
+	padding-bottom: 40px;
+	@include small-device{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	&__item{
+		font-size: 14px;
+		color: #000;
+		text-align: center;
+		margin-bottom: 60px;
+		img{
+			display: inline-block;
+		}
+		h1{
+			font-size: 15px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		p{
+			color: $gray;
+		}
+	}
+}

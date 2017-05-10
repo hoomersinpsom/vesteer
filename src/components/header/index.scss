@@ -4,4 +4,34 @@
 	left: 0;
 	width: 100%;
 	z-index: 10;
+	&__logo{
+		color: #fff;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		display: inline-block;
+		.h1{
+			font-weight: bold;
+			font-size: 20px;
+		}
+		&:hover{
+			color: #fff;
+			text-decoration: none;
+		}
+	}
+	nav{
+		a{
+			color: $blue-light;
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 11px;
+			display: inline-block;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+	}
+	.sep{
+		background-color: $blue-light;
+		height: 1px;
+		opacity: 0.5;
+	}
 }
