@@ -1,0 +1,22 @@
+.download{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	text-align: center;
+	@include small-device{
+		padding-top: 40px;
+		padding-bottom: 40px;		
+	}
+	p{
+		font-weight: bold;
+		font-size: 11px;
+		text-transform: uppercase;
+		color: #323232;
+		margin-bottom: 30px;
+	}
+	h1{
+	    color: #323232;
+	    font-size: 29px;
+	    font-weight: 200;
+	    margin-top: 0;
+	}
+}
