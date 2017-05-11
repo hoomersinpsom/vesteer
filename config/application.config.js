@@ -9,7 +9,7 @@ const config = {
     apiUrl: "http://localhost:3000"
   },
   production: {
-    path: '/',
+    path: '/vesteer/',
     baseUrl: '',
     apiUrl: "http://localhost:3000"
   },
